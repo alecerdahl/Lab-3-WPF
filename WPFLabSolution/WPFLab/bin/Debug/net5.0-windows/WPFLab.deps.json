@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WPFLab/1.0.0": {
+        "dependencies": {
+          "ClassLibraryWPFLab": "1.0.0"
+        },
+        "runtime": {
+          "WPFLab.dll": {}
+        }
+      },
+      "ClassLibraryWPFLab/1.0.0": {
+        "runtime": {
+          "ClassLibraryWPFLab.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPFLab/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibraryWPFLab/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

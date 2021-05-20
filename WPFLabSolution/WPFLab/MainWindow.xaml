@@ -1,0 +1,81 @@
+﻿<Window x:Class="WPFLab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLab"
+        mc:Ignorable="d"
+        Title="Student Info" Height="450" Width="800" FontSize="18" FontFamily="Segoe UI Black">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="1"
+                   Text="Student Info:" FontSize="30" FontFamily="Arial Black" Grid.ColumnSpan="2" Margin="0,16,0,80" HorizontalAlignment="Center" Width="216" />
+        <TextBlock Grid.Column="0" Grid.Row="1" FontSize="14" FontWeight="SemiBold"
+                   Text="Select graduation year: " HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,21,17,0" />
+        <TextBlock Grid.Column="3" Grid.Row="1" FontSize="14" FontWeight="SemiBold"
+                   Text="Select major: " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,24,0,0" RenderTransformOrigin="2.782,-7.896" />
+
+        <Button x:Name="btnYear" Content="Get Year" Grid.Column="1"
+                Grid.Row="2" Width="120" Click="btnYear_Click" Height="50" Margin="41,36,19,36" FontSize="16" />
+        <Button x:Name="btnMajor" Content="Get Major" Grid.Column="2"
+                Grid.Row="2" Click="btnMajor_Click" Height="50" Width="120" Margin="20,36,40,36" FontSize="16" />
+
+        <ListBox Name="lboYear" Grid.Row="1" FontSize="16" Margin="0,62,165,83" Grid.RowSpan="3" Grid.ColumnSpan="2">
+            <ListBoxItem Content="2001"></ListBoxItem>
+            <ListBoxItem Content="2002"></ListBoxItem>
+            <ListBoxItem Content="2003"></ListBoxItem>
+            <ListBoxItem Content="2004"></ListBoxItem>
+            <ListBoxItem Content="2005"></ListBoxItem>
+            <ListBoxItem Content="2006"></ListBoxItem>
+            <ListBoxItem Content="2007"></ListBoxItem>
+            <ListBoxItem Content="2008"></ListBoxItem>
+            <ListBoxItem Content="2009"></ListBoxItem>
+            <ListBoxItem Content="2010"></ListBoxItem>
+            <ListBoxItem Content="2011"></ListBoxItem>
+            <ListBoxItem Content="2012"></ListBoxItem>
+            <ListBoxItem Content="2013"></ListBoxItem>
+            <ListBoxItem Content="2014"></ListBoxItem>
+            <ListBoxItem Content="2015"></ListBoxItem>
+            <ListBoxItem Content="2016"></ListBoxItem>
+            <ListBoxItem Content="2017"></ListBoxItem>
+            <ListBoxItem Content="2018"></ListBoxItem>
+            <ListBoxItem Content="2019"></ListBoxItem>
+            <ListBoxItem Content="2020"></ListBoxItem>
+        </ListBox>
+
+        <ListBox x:Name="lboMajor" Grid.Column="2" Grid.Row="1" FontSize="15" Grid.RowSpan="3" Grid.ColumnSpan="2" Margin="165,72,0,83">
+            <ListBoxItem Content="Computer Science"/>
+            <ListBoxItem Content="Business"/>
+            <ListBoxItem Content="Education"/>
+            <ListBoxItem Content="Communications"/>
+            <ListBoxItem Content="Psychology"/>
+            <ListBoxItem Content="Transportations"/>
+            <ListBoxItem Content="Natural Resources"/>
+            <ListBoxItem Content="Social Sciences"/>
+            <ListBoxItem Content="Mechanics"/>
+            <ListBoxItem Content="Electrical Engineering"/>
+            <ListBoxItem Content="Chemical Engineering"/>
+            <ListBoxItem Content="Mechanical Engineering"/>
+            <ListBoxItem Content="Agriculture"/>
+            <ListBoxItem Content="Biology"/>
+            <ListBoxItem Content="Physics"/>
+            <ListBoxItem Content="Software Engineering"/>
+            <ListBoxItem Content="Journalism"/>
+            <ListBoxItem Content="Mathematics"/>
+            <ListBoxItem Content="Health Services"/>
+            <ListBoxItem Content="Law"/>
+        </ListBox>
+    </Grid>
+</Window>
